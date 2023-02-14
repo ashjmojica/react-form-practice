@@ -15,3 +15,4 @@ There should be a list of pets, stored in state in App.js as `pets`.
 *Optional*
 
 1. Mess around with filter! In `App.js` set up a filter to filter your list of pets based on a certain species or name, you choose. Just get some practice with filtering - this will not be required.
+2. Toggle something! Set up some state, set up a button or click event somewhere to trigger a state change - you could show or hide an element, change a color, change text, whatever you want to try.
