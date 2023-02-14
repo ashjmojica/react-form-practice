@@ -12,7 +12,7 @@ function App() {
       .then(data => setPets(data))
   }, [])
 
-  // TODO NewPet needs a way to add the new pet to our pets state. What should we pass as a prop?
+  // TODO 3. NewPet needs a way to add the new pet to our pets state. What should we pass as a prop?
 
   return (
     <div className="App">
