@@ -1,0 +1,24 @@
+{
+  "pets": [
+    {
+      "id": 1,
+      "species": "cat",
+      "name": "Jazzy"
+    },
+    {
+      "id": 2,
+      "species": "dog",
+      "name": "Rocky"
+    },
+    {
+      "id": 3,
+      "species": "axolotl",
+      "name": "Ganondorf"
+    },
+    {
+      "id": 4,
+      "species": "cat",
+      "name": "Shia"
+    }
+  ]
+}

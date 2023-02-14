@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import NewPet from './NewPet';
+import PetsContainer from './PetsContainer';
 
 function App() {
+  const [pets, setPets] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8004/pets')
+      .then(res => res.json())
+      .then(data => setPets(data))
+  }, [])
+
+  // TODO NewPet needs a way to add the new pet to our pets state. What should we pass as a prop?
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PetsContainer pets={pets} />
+      <NewPet />
     </div>
   );
 }
