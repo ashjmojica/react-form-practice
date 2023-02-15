@@ -24,6 +24,12 @@
   flex-direction: column;
 }
 
+.active {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
 .pets-container h1 {
   text-align: center;
 }

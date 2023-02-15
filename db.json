@@ -19,6 +19,26 @@
       "id": 4,
       "species": "cat",
       "name": "Shia"
+    },
+    {
+      "species": "Cane Corso",
+      "name": "Rocky",
+      "id": 5
+    },
+    {
+      "species": "Cane Corso",
+      "name": "Rocky",
+      "id": 6
+    },
+    {
+      "species": "Cane Corso",
+      "name": "Rocky",
+      "id": 7
+    },
+    {
+      "species": "Cane Corso",
+      "name": "Rocky",
+      "id": 8
     }
   ]
 }

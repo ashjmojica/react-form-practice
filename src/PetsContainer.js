@@ -1,7 +1,10 @@
 import React from 'react';
 import Pet from './Pet';
+import { useState } from 'react';
+
 
 const PetsContainer = ({ pets }) => {
+  const [ isClicked, setIsClicked ] = useState(false)
 
   const displayPets = pets.map(pet => (
     <Pet 
@@ -10,8 +13,12 @@ const PetsContainer = ({ pets }) => {
     />
   ))
 
+function handleClick() {
+  setIsClicked(isClicked => !isClicked)
+}
+
   return (
-    <div className="pets-container">
+    <div className={isClicked? "active" : "pets-container"} onClick={handleClick}>
       <h1>Our Pets</h1>
       {displayPets}
     </div>
